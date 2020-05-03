@@ -13,4 +13,6 @@ To reduce problem with voltage decline I have added capacitor 10uF and nrf24 ada
 To make signal stronger I have used nrf24l01 + pa + lna.
 Image of my project is bellow
 
+
+## View of my project
 ![IProject image](img/project.jpg)
