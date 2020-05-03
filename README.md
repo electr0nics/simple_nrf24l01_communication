@@ -1,11 +1,12 @@
 # simple_nrf24l01_communication
-My fist arduino communication with nrf24l01
+My first Arduino communication using nrf24l01.
+The receiver and sender are connected in the same way.
 
 ![Project breadboard](img/breadboard.png)
 
 To reduce problem with voltage I have added capacitor 10uF and nrf24 adapter.
 
 To make signal stronger I have used nrf24l01 + pa + lna.
-Image is bellow
+Image of my project is bellow
 
 ![IProject image](img/project.jpg)
