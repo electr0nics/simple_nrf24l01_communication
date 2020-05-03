@@ -14,6 +14,14 @@ char text[20];
 
 void setup() {
   radio.begin();
+
+//  # Additionally, you can add a checking radio connection.
+//  # If something is wrong you can turn on led.
+//  bool result = radio.isChipConnected ();
+//  if (result == 0) {
+//    digitalWrite(2, HIGH);
+//  }
+
   radio.openWritingPipe(address);
   radio.setPALevel(RF24_PA_MIN);
   radio.stopListening();
