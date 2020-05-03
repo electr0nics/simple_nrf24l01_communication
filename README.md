@@ -2,8 +2,8 @@
 My first Arduino communication using nrf24l01.
 The receiver and sender are connected in the same way.
 
-Code for sender is available here [Sender code](docs/sender.code)
-Code for receiver is available here [Receiver code](docs/receiver.code)
+- Code for sender is available here [Sender code](sender.code)
+- Code for receiver is available here [Receiver code](receiver.code)
 
 ![Project breadboard](img/breadboard.png)
 
