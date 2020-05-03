@@ -1,0 +1,26 @@
+/*
+  Arduino Wireless Communication
+      - Sender Code
+  by Mikołaj Muller
+*/
+
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+
+RF24 radio(9, 10); // CE, CSN
+const byte address[6] = "00001";
+char text[20];
+
+void setup() {
+  radio.begin();
+  radio.openWritingPipe(address);
+  radio.setPALevel(RF24_PA_MIN);
+  radio.stopListening();
+}
+void loop() {
+  static uint16_t licznik = 0;
+  sprintf(text, "Hello World %03d", licznik++);
+  radio.write(&text, sizeof(text));
+  delay(1000);
+}
